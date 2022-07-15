@@ -3,12 +3,12 @@ html {
 }
 
 body {
-  font-family: 'Roboto Flex', sans-serif;
+  font-family: "Roboto Flex", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  background-color: #FFFCF6;
-  color: #3D3D3D;
+  background-color: #fffcf6;
+  color: #3d3d3d;
 }
 
 .wrapper {
@@ -70,7 +70,7 @@ body {
   cursor: pointer;
   display: inline-flex;
   min-height: 40px;
-  background-color: #F48020;
+  background-color: #f48020;
   border-radius: 48px;
   justify-content: center;
   align-items: center;
@@ -87,38 +87,16 @@ body {
 }
 
 .btn_orange-transparent {
-  background-color: #F8D8BD;
-  color: #F48020;
+  background-color: #f8d8bd;
+  color: #f48020;
 }
 
-.btn_orange:hover {
-  background-color: #e27013;
-}
 .btn_dark {
-  border: 3px solid #3D3D3D;
+  border: 3px solid #3d3d3d;
   border-radius: 48px;
   background: transparent;
-  color: #3D3D3D;
+  color: #3d3d3d;
 }
-
-.btn_dark:hover .item-nav-project__icon {
-  background-color: #3D3D3D;
-  border-radius: 50%;
-  color: #ffffff;
-  padding: 4px;
-  transition: all 50ms linear;
-  animation: visibileIconWithOpacity 200ms linear;
-}
-
-@keyframes visibileIconWithOpacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 
 /* HEADER -------------------------------------------------------------------------------> */
 
@@ -187,7 +165,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: all 150ms ease;
-  background-color:#FFFCF6;
+  background-color: #fffcf6;
 }
 .language__menu._menu-is-active {
   visibility: visible;
@@ -251,7 +229,6 @@ body {
 /* PROJECT ----------------------------------------------------------------------------------------> */
 
 .page__project {
-  
 }
 .project {
   position: relative;
@@ -277,12 +254,8 @@ body {
 }
 .item-nav-project._is-active {
   color: #ffffff;
-  background-color: #3D3D3D;
+  background-color: #3d3d3d;
   transition: all 150ms linear;
-}
-.item-nav-project._is-active:hover {
-  color: #3D3D3D;
-  background: transparent;
 }
 .item-nav-project__icon {
   font-size: 18px;
@@ -309,6 +282,21 @@ body {
 
 .project__body {
   display: flex;
+}
+.project__body._visible-with-opacity .project__title {
+  animation: visibleWithOpacity 400ms ease;
+}
+.project__body._visible-with-opacity .project__images {
+  animation: visibleWithOpacity 400ms ease;
+}
+@keyframes visibleWithOpacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 .project__content {
   padding: 10px 20px 0px 0px;
@@ -348,13 +336,14 @@ body {
   cursor: pointer;
   width: 200px;
   height: 100px;
-  background: #D9D9D9;
+  background: #d9d9d9;
   border-radius: 20px;
+  overflow: hidden;
 }
 .project__btns {
 }
 .project__btns > *:not(:last-child) {
-  margin: 0px 20px 0px 0px; 
+  margin: 0px 20px 0px 0px;
 }
 .project__btn_website {
   padding: 0 66.5px;
@@ -366,7 +355,7 @@ body {
   margin: 0px -80px 0px 0px;
   flex: 0 0 820px;
   height: 600px;
-  background-color: #F3F6E6;
+  background-color: #f3f6e6;
   border-radius: 20px 0px 0px 20px;
 }
 
@@ -417,12 +406,13 @@ body {
 .documents__item {
 }
 .item-document {
-  border: 3px solid #3D3D3D;
+  border: 3px solid #3d3d3d;
   border-radius: 20px;
   overflow: hidden;
   text-align: center;
   position: relative;
-  background: url("../img/documents-img/document.png") center center / cover no-repeat;
+  background: url("../img/documents-img/document.png") center center / cover
+    no-repeat;
 }
 .item-document__title {
   font-weight: 700;
@@ -436,7 +426,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06);
   border-radius: 24px;
   padding: 0 20px;
@@ -450,9 +440,8 @@ body {
 
 /* FOOTER ---------------------------------------------------------------------------> */
 
-
 .footer {
-  background-color: #0B0D17;
+  background-color: #0b0d17;
   padding: 21px 0;
 }
 .footer__container {
@@ -477,4 +466,47 @@ body {
 .footer__social {
 }
 .footer__social-icon {
+}
+
+/* DYNAMIC STYLES ----------------------------------------------------------------> */
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.733);
+  margin-top: -1px;
+  animation: zoom 0.3s ease-in-out;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.modal img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.closeBtn {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.closeBtn:hover {
+  color: rgb(255, 255, 255);
 }

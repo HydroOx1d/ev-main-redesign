@@ -59,7 +59,7 @@
   .header__nav._nav-is-active {
     display: block;
     position: absolute;
-    background-color: #FBFBFB;
+    background-color: #fbfbfb;
     top: 80px;
     left: 0;
     width: 100%;
@@ -147,7 +147,7 @@
     margin: 0px 0px 30px 0px;
   }
   .project__btns > *:not(:last-child) {
-    margin: 0px 10px 0px 0px; 
+    margin: 0px 10px 0px 0px;
   }
   .project__btn_website {
     padding: 0 56.5px;
@@ -169,6 +169,34 @@
     height: 100px;
   }
   .documents__list {
-    grid-template-columns: repeat(1, 1fr)
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .btn_orange:hover {
+    background-color: #e27013;
+  }
+  .btn_dark:hover .item-nav-project__icon {
+    background-color: #3d3d3d;
+    border-radius: 50%;
+    color: #ffffff;
+    padding: 4px;
+    transition: all 50ms linear;
+    animation: visibileIconWithOpacity 200ms linear;
+  }
+
+  .item-nav-project._is-active:hover {
+    color: #3d3d3d;
+    background: transparent;
+  }
+
+  @keyframes visibileIconWithOpacity {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
