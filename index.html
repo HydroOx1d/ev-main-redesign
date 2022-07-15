@@ -1,128 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Envoys Vision</title>
-  <!-- STYLES -->
-  <link rel="stylesheet" href="./css/icons-font.css">
-  <link rel="stylesheet" href="./css/clear.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/media.css">
-  <!-- FONTS -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <div class="wrapper">
- 
-    <header class="header">
-      <div class="header__container _container">
-        <div class="header__logo logo">
-          <img src="./img/header/logo.svg" alt="logo" class="logo__image">
-        </div>
-        <nav class="header__nav nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="" class="nav__link">Сapitalization</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Stocks</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Documents</a></li>
-          </ul>
-        </nav>
-        <div class="header__language language">
-          <div class="language__current">
-            <img src="./img/header/us.svg" alt="usa_icon" class="language__flag">
-            <span class="language__text">English</span>
-            <img src="./img/header/arrow-bottom.svg" alt="arrow_bottom" class="language__arrow">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Envoys Vision</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./css/habmurger.css" />
+    <link rel="stylesheet" href="./css/icons-font.css" />
+    <link rel="stylesheet" href="./css/clear.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container _container">
+          <div class="header__logo logo">
+            <img src="./img/header/logo.svg" alt="logo" class="logo__image" />
           </div>
-          <nav class="language__menu">
-            <ul class="language__list">
-              <li class="language__item"><img src="./img/header/us.svg" alt="usa">English</li>
-              <li class="language__item"><img src="./img/header/russia.svg" alt="usa">Russian</li>
-              <li class="language__item"><img src="./img/header/china.svg" alt="usa">China</li>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="" class="nav__link">Сapitalization</a>
+              </li>
+              <li class="nav__item"><a href="" class="nav__link">Stocks</a></li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Documents</a>
+              </li>
             </ul>
           </nav>
+          <div class="header__language language">
+            <div class="language__current">
+              <img
+                src="./img/header/us.svg"
+                alt="usa_icon"
+                class="language__flag"
+              />
+              <span class="language__text">English</span>
+              <img
+                src="./img/header/arrow-bottom.svg"
+                alt="arrow_bottom"
+                class="language__arrow"
+              />
+            </div>
+            <nav class="language__menu">
+              <ul class="language__list">
+                <li class="language__item">
+                  <img src="./img/header/us.svg" alt="usa" />English
+                </li>
+                <li class="language__item">
+                  <img src="./img/header/russia.svg" alt="usa" />Russian
+                </li>
+                <li class="language__item">
+                  <img src="./img/header/china.svg" alt="usa" />China
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__hamburger">
+            <button class="hamburger hamburger--spring" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
 
-    <main class="page">
-      <section class="page__present present">
-        <div class="present__container _container">
-          <div class="present__content">
-            <h1 class="present__title title">Envoys Vision Digital Exchange Ecosystem</h1>
-            <a class="btn btn_orange present__btn">Try it</a>
+      <main class="page">
+        <section class="page__present present">
+          <div class="present__container _container">
+            <div class="present__content">
+              <h1 class="present__title title">
+                Envoys Vision Digital Exchange Ecosystem
+              </h1>
+              <a href="#project" class="btn btn_orange present__btn">Try it</a>
+            </div>
+            <div class="present__image _ibg">
+              <img src="./img/present/present-git.gif" alt="computer_gif" />
+            </div>
           </div>
-          <div class="present__image _ibg">
-            <img src="./img/present/present-git.gif" alt="computer_gif">
-          </div>
-        </div>
-      </section>
-      <section class="page__project project">
-        <div class="project__container _container">
-          <nav class="project__nav">
-            <div class="btn btn_dark project__nav-item item-nav-project _is-active item-nav-project_stock">
-              <i class="item-nav-project__icon _icon-stock"></i>
-              <span class="item-nav-project__text">Stock Exchange</span>
-            </div>
-            <div class="btn btn_dark project__nav-item item-nav-project item-nav-project_dex">
-              <i class="item-nav-project__icon _icon-dex"></i>
-              <span class="item-nav-project__text">DEX</span>
-            </div>
-            <div class="btn btn_dark project__nav-item item-nav-project item-nav-project_nft">
-              <i class="item-nav-project__icon _icon-nft"></i>
-              <span class="item-nav-project__text">NFT</span>
-            </div>
-            <div class="btn btn_dark project__nav-item item-nav-project item-nav-project_market">
-              <i class="item-nav-project__icon _icon-market"></i>
-              <span class="item-nav-project__text">Market</span>
-            </div>
-          </nav>
-          <div class="project__body">
-            <div class="project__content">
-              <h2 class="project__title">Stock Exchange</h2>
-              <div class="project__description">Decentralized financial services, or decentralized finance, is a common name for analogues of traditional financial instruments implemented in a decentralized architecture. These services are publicly available, are open source projects and are most often based on smart contracts.</div>
-              <div class="project__description">Cryptocurrency is similar to the digital form of cash. With it, you can pay for dinner with friends, buy a new pair of socks that you've been dreaming about for a long time, or book flights and hotels for a vacation. Since the cryptocurrency has a digital form, it can also be sent to friends and relatives anywhere in the world.</div>
-              <div class="project__images">
-                <div class="project__image"></div>
-                <div class="project__image"></div>
-                <div class="project__image"></div>
-                <div class="project__image"></div>
+        </section>
+        <section id="project" class="page__project project">
+          <div class="project__container _container">
+            <nav class="project__nav">
+              <div
+                class="btn btn_dark project__nav-item item-nav-project _is-active item-nav-project_stock"
+              >
+                <i class="item-nav-project__icon _icon-stock"></i>
+                <span class="item-nav-project__text">Stock Exchange</span>
               </div>
-              <div class="project__btns">
-                <a class="btn btn_orange-transparent project_ project__btn_website">Web-Site</a>
-                <a class="btn btn_orange project__btn_app">App <img src="./img/project/arrow.svg" alt="arrow_right"></a>
+              <div
+                class="btn btn_dark project__nav-item item-nav-project item-nav-project_dex"
+              >
+                <i class="item-nav-project__icon _icon-dex"></i>
+                <span class="item-nav-project__text">DEX</span>
+              </div>
+              <div
+                class="btn btn_dark project__nav-item item-nav-project item-nav-project_nft"
+              >
+                <i class="item-nav-project__icon _icon-nft"></i>
+                <span class="item-nav-project__text">NFT</span>
+              </div>
+              <div
+                class="btn btn_dark project__nav-item item-nav-project item-nav-project_market"
+              >
+                <i class="item-nav-project__icon _icon-market"></i>
+                <span class="item-nav-project__text">Market</span>
+              </div>
+            </nav>
+            <div class="project__body">
+              <div class="project__content">
+                <h2 class="project__title">Stock Exchange</h2>
+                <div class="project__description">
+                  Decentralized financial services, or decentralized finance, is
+                  a common name for analogues of traditional financial
+                  instruments implemented in a decentralized architecture. These
+                  services are publicly available, are open source projects and
+                  are most often based on smart contracts.
+                </div>
+                <div class="project__description">
+                  Cryptocurrency is similar to the digital form of cash. With
+                  it, you can pay for dinner with friends, buy a new pair of
+                  socks that you've been dreaming about for a long time, or book
+                  flights and hotels for a vacation. Since the cryptocurrency
+                  has a digital form, it can also be sent to friends and
+                  relatives anywhere in the world.
+                </div>
+                <div class="project__images">
+                  <div class="project__image"></div>
+                  <div class="project__image"></div>
+                  <div class="project__image"></div>
+                  <div class="project__image"></div>
+                </div>
+                <div class="project__btns">
+                  <a
+                    class="btn btn_orange-transparent project_ project__btn_website"
+                    >Web-Site</a
+                  >
+                  <a class="btn btn_orange project__btn_app"
+                    >App <img src="./img/project/arrow.svg" alt="arrow_right"
+                  /></a>
+                </div>
+              </div>
+              <div class="project__illustration">
+                <img src="./img/project/project-gif.gif" alt="illustration" />
               </div>
             </div>
-            <div class="project__illustration">
-              <img src="./img/project/project-gif.gif" alt="illustration">
+          </div>
+        </section>
+        <section class="page__goto-document goto-document">
+          <div class="goto-document__container _container">
+            <h2 class="goto-document__title title">
+              Download our documents for understanding proccess
+            </h2>
+            <a href="" class="btn btn_orange-transparent goto-document__btn"
+              >See document</a
+            >
+            <div class="goto-document__illustration _ibg">
+              <img
+                src="./img/documents-img/doc-illustration.gif"
+                alt="a_lot_of_tab_gif"
+              />
             </div>
           </div>
-        </div>
-      </section>
-      <section class="page__goto-document goto-document">
-        <div class="goto-document__container _container">
-          <h2 class="goto-document__title title">Download our documents for understanding proccess</h2>
-          <a href="" class="btn btn_orange-transparent goto-document__btn">See document</a>
-          <div class="goto-document__illustration _ibg">
-            <img src="./img/documents-img/doc-illustration.gif" alt="a_lot_of_tab_gif">
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container _container">
+          <div class="footer__copyright">
+            © 2022 Envoys Vision. All rights reserved
+          </div>
+          <div class="footer__logo logo">
+            <img src="./img/header/logo.svg" alt="logo" class="logo__image" />
+            <div class="logo__text">Envoys Vision</div>
+          </div>
+          <div class="footer__socials">
+            <a href="" class="footer__social"
+              ><img
+                src="./img/footer/insta.svg"
+                alt="instagram"
+                class="footer__social-icon"
+            /></a>
+            <a href="" class="footer__social"
+              ><img
+                src="./img/footer/facebook.svg"
+                alt="facebook"
+                class="footer__social-icon"
+            /></a>
+            <a href="" class="footer__social"
+              ><img
+                src="./img/footer/twitter.svg"
+                alt="twitter"
+                class="footer__social-icon"
+            /></a>
+            <a href="" class="footer__social"
+              ><img
+                src="./img/footer/linkedin.svg"
+                alt="linkedin"
+                class="footer__social-icon"
+            /></a>
           </div>
         </div>
-      </section>
-    </main>
+      </footer>
+    </div>
 
-    <footer class="footer">
-      <div class="footer__container _container">
-
-      </div>
-    </footer>
-
-  </div>
-
-
-
-  <!-- SCRIPTS -->
-  <script src="./js/script.js"></script>
-
-</body>
+    <!-- SCRIPTS -->
+    <script src="./js/script.js"></script>
+  </body>
 </html>
