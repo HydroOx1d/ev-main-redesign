@@ -35,10 +35,22 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
+  .project {
+    padding: 0px 0px 80px 0px;
+  }
+  .goto-document__illustration {
+    padding: 0px 0px 40% 0px;
+  }
+}
+
+@media (max-width: 675px) {
   .title {
     font-size: 36px;
   }
+}
+
+@media (max-width: 576px) {
   .present__btn {
     padding: 0 48.5px;
   }
@@ -69,6 +81,9 @@
   }
   .project__btn_website {
     padding: 0 56.5px;
+  }
+  .goto-document__illustration {
+    padding: 0px 0px 75.17% 0px;
   }
 }
 
