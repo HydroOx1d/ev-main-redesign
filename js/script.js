@@ -33,6 +33,9 @@ import { changeLanguage } from "./modules/changeLanguage.js";
 const currentLanguage = headerLanguage.querySelector('.language__current');
 const languageItem = languageMenu.querySelectorAll('.language__item');
 
+let globalLanguageState;
+let inititalProjectData;
+
 for(let i = 0; i < languageItem.length; i++) {
   let currentItem = languageItem[i];
 
@@ -41,7 +44,9 @@ for(let i = 0; i < languageItem.length; i++) {
     currentLanguage.querySelector(".language__flag").src = e.target.querySelector('img').src;
     // Current Text
     currentLanguage.querySelector(".language__text").innerText = e.target.innerText;
-    changeLanguage(e.target.dataset.language);
+    globalLanguageState = e.target.dataset.language;
+    changeLanguage(globalLanguageState);
+    visibilityProjectData(inititalProjectData, globalLanguageState);
   })
 }
 
@@ -67,7 +72,9 @@ for (let i = 0; i < projectNavItem.length; i++) {
 
     projectNavItem[activeNav].classList.add('_is-active')
 
-    visibilityProjectData(current.dataset.project)
+    inititalProjectData = current.dataset.project;
+
+    visibilityProjectData(inititalProjectData, globalLanguageState);
 
     projectBody.classList.add("_visible-with-opacity");
 
@@ -78,22 +85,28 @@ for (let i = 0; i < projectNavItem.length; i++) {
 }
 
 window.addEventListener('load', () => {
-  visibilityProjectData('stock')
+  globalLanguageState = 'en';
+  inititalProjectData = 'stock';
+  changeLanguage(globalLanguageState);
+  visibilityProjectData(inititalProjectData, globalLanguageState);
 })
 
 
 // -- images
 import { imageModal } from './modules/imagesModal.js';
 
-const projectImages = projectBody.querySelectorAll('.project__image img');
+const projectImages = projectBody?.querySelectorAll('.project__image img');
 let imgSrc;
 
-for(let i = 0; i < projectImages.length; i++) {
-  let currentImage = projectImages[i];
+if(projectImages) {
+  for (let i = 0; i < projectImages.length; i++) {
+    let currentImage = projectImages[i];
 
-  currentImage.addEventListener('click', (e) => {
-    imgSrc = e.target.src;
+    currentImage.addEventListener("click", (e) => {
+      imgSrc = e.target.src;
 
-    imageModal(imgSrc);
-  })
+      imageModal(imgSrc);
+    });
+  }
 }
+ 

@@ -17,6 +17,11 @@ export const language = {
         button: "See document",
       },
     },
+    documentsPage: {
+      title: "Download our documents for understanding proccess",
+      itemTitle: "White Paper",
+      itemLink: "Download",
+    },
   },
   ru: {
     header: {
@@ -36,6 +41,11 @@ export const language = {
         button: "Посмотреть документы",
       },
     },
+    documentsPage: {
+      title: "Загрузите наши документы для понимания процесса",
+      itemTitle: "Чистый лист",
+      itemLink: "Загрузить",
+    },
   },
   ch: {
     header: {
@@ -54,6 +64,11 @@ export const language = {
         title: "下载我们的文档以了解流程",
         button: "见文件",
       },
+    },
+    documentsPage: {
+      title: "下载我们的文件以了解过程",
+      itemTitle: "白皮书",
+      itemLink: "下载",
     },
   },
 };
