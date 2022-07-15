@@ -27,6 +27,24 @@ document.body.onclick = (e) => {
   }
 };
 
+// Dropdown
+import { changeLanguage } from "./modules/changeLanguage.js";
+
+const currentLanguage = headerLanguage.querySelector('.language__current');
+const languageItem = languageMenu.querySelectorAll('.language__item');
+
+for(let i = 0; i < languageItem.length; i++) {
+  let currentItem = languageItem[i];
+
+  currentItem.addEventListener('click', (e) => {
+    // Current Flag
+    currentLanguage.querySelector(".language__flag").src = e.target.querySelector('img').src;
+    // Current Text
+    currentLanguage.querySelector(".language__text").innerText = e.target.innerText;
+    changeLanguage(e.target.dataset.language);
+  })
+}
+
 // PROJECTS
 import { visibilityProjectData } from "./modules/visibilityProjectData.js";
 

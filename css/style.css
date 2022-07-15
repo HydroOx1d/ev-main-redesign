@@ -161,7 +161,6 @@ body {
   right: 0;
   width: 120px;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.082);
-  padding: 10px 20px 10px 20px;
   opacity: 0;
   visibility: hidden;
   transition: all 150ms ease;
@@ -175,9 +174,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-.language__list > *:not(:last-child) {
-  margin: 0px 0px 10px 0px;
-}
 .language__item {
   cursor: pointer;
   display: inline-flex;
@@ -185,6 +181,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: calc(16 / 14 * 100%);
+  padding: 10px 20px 10px 20px;
 }
 .language__item img {
   margin: 0px 10px 0px 0px;
