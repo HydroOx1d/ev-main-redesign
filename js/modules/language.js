@@ -12,6 +12,12 @@ export const language = {
         title: "Envoys Vision Digital Exchange Ecosystem",
         button: "Try it",
       },
+      projects: {
+        0: "Stock Exchange",
+        1: "DEX",
+        2: "NFT",
+        3: "Market",
+      },
       documents: {
         title: "Download our documents for understanding proccess",
         button: "See document",
@@ -36,6 +42,12 @@ export const language = {
         title: "Экосистема цифровой биржи Envoys Vision",
         button: "Попробовать",
       },
+      projects: {
+        0: "Фондовая биржа",
+        1: "DEX",
+        2: "NFT",
+        3: "Рынок",
+      },
       documents: {
         title: "Загрузите наши документы для понимания процесса",
         button: "Посмотреть документы",
@@ -59,6 +71,12 @@ export const language = {
       present: {
         title: "Envoys Vision 数字交换生态系统",
         button: "试试看",
+      },
+      projects: {
+        0: "证券交易所",
+        1: "DEX",
+        2: "NFT",
+        3: "市场",
       },
       documents: {
         title: "下载我们的文档以了解流程",
