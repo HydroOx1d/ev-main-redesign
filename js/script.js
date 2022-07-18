@@ -33,6 +33,7 @@ import { changeLanguage } from "./modules/changeLanguage.js";
 const currentLanguage = headerLanguage.querySelector('.language__current');
 const languageItem = languageMenu.querySelectorAll('.language__item');
 
+// for initial set language
 let globalLanguageState;
 let inititalProjectData;
 
@@ -44,8 +45,13 @@ for(let i = 0; i < languageItem.length; i++) {
     currentLanguage.querySelector(".language__flag").src = e.target.querySelector('img').src;
     // Current Text
     currentLanguage.querySelector(".language__text").innerText = e.target.innerText;
+
     globalLanguageState = e.target.dataset.language;
+
+    localStorage.setItem("currentLanguageState", globalLanguageState);
+
     changeLanguage(globalLanguageState);
+
     visibilityProjectData(inititalProjectData, globalLanguageState);
   })
 }
@@ -85,9 +91,13 @@ for (let i = 0; i < projectNavItem.length; i++) {
 }
 
 window.addEventListener('load', () => {
-  globalLanguageState = 'en';
+  let currentLanguage = localStorage.getItem('currentLanguageState');
+  if(currentLanguage === null) {
+    currentLanguage = localStorage.setItem("currentLanguageState", "en");
+  }
+  globalLanguageState = currentLanguage;
   inititalProjectData = 'stock';
-  changeLanguage(globalLanguageState);
+  changeLanguage(currentLanguage);
   visibilityProjectData(inititalProjectData, globalLanguageState);
 })
 

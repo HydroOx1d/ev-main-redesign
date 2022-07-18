@@ -38,7 +38,7 @@ export const projectData = {
     title: {
       en: "Dex",
       ru: "Dex",
-      ch: "德克斯",
+      ch: "Dex",
     },
     description: {
       en: "Decentralized financial services, or decentralized finance, is a common name for analogues of traditional financial instruments implemented in a decentralized architecture. These services are publicly available, are open source projects and are most often based on smart contracts.Cryptocurrency is similar to the digital form of cash. With it, you can pay for dinner with friends, buy a new pair of socks that you've been dreaming about for a long time, or book flights and hotels for a vacation. Since the cryptocurrency has a digital form, it can also be sent to friends and relatives anywhere in the world.",
