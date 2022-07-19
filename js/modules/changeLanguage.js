@@ -35,7 +35,7 @@ export function changeLanguage(type) {
   const projectSection = document?.querySelector(".page__project");
   const projectLinksText = projectSection?.querySelectorAll(".item-nav-project__text");
 
-  projectLinksText.forEach((link, i) => {
+  projectLinksText?.forEach((link, i) => {
     link.innerText = currentLanguage.main.projects[i];
   })
 

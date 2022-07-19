@@ -8,6 +8,7 @@ export function visibilityProjectData(projectName, languageType) {
 
   const title = projectBody.querySelector(".project__title");
   const desc = projectBody.querySelector(".project__description");
+  const illustration = projectBody.querySelector(".project__illustration img");
   const screenshots = projectBody.querySelectorAll(".project__image img");
 
   title.innerText = currentProject.title[languageType];
@@ -19,4 +20,8 @@ export function visibilityProjectData(projectName, languageType) {
   for(let i = 0; i < screenshots.length; i++) {
     screenshots[i].src = currentProject.projectScreenshots[i].link;
   }
+
+  // Illustration
+
+  illustration.src = currentProject.illustration;
 }

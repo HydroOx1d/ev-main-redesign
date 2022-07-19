@@ -286,6 +286,9 @@ body {
 .project__body._visible-with-opacity .project__images {
   animation: visibleWithOpacity 400ms ease;
 }
+.project__body._visible-with-opacity .project__illustration {
+  animation: visibleWithOpacity 400ms ease;
+}
 @keyframes visibleWithOpacity {
   from {
     opacity: 0;
@@ -334,7 +337,7 @@ body {
   width: 200px;
   height: 100px;
   background: #d9d9d9;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
 }
 .project__btns {

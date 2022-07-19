@@ -67,7 +67,7 @@ export const projectData = {
       toWebSite: "",
       toApplication: "",
     },
-    illustration: "./img/project/project-gif.gif",
+    illustration: "./img/project/project-gif2.gif",
   },
   nft: {
     title: {
@@ -102,7 +102,7 @@ export const projectData = {
       toWebSite: "",
       toApplication: "",
     },
-    illustration: "./img/project/project-gif.gif",
+    illustration: "./img/project/project-gif3.gif",
   },
   market: {
     title: {
@@ -137,6 +137,6 @@ export const projectData = {
       toWebSite: "",
       toApplication: "",
     },
-    illustration: "./img/project/project-gif.gif",
+    illustration: "./img/project/project-gif4.gif",
   },
 };
