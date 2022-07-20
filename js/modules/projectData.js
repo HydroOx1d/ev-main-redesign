@@ -13,19 +13,19 @@ export const projectData = {
     projectScreenshots: [
       {
         id: 1,
-        link: "https://images.unsplash.com/photo-1657861970480-268922fa3732?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        link: "./img/project/screenshots/evde1.jpg",
       },
       {
         id: 2,
-        link: "https://images.unsplash.com/photo-1657861970480-268922fa3732?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        link: "./img/project/screenshots/evde2.jpg",
       },
       {
         id: 3,
-        link: "https://images.unsplash.com/photo-1657861970480-268922fa3732?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        link: "./img/project/screenshots/evde3.jpg",
       },
       {
         id: 4,
-        link: "https://images.unsplash.com/photo-1657861970480-268922fa3732?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        link: "./img/project/screenshots/evde4.jpg",
       },
     ],
     links: {
@@ -48,19 +48,19 @@ export const projectData = {
     projectScreenshots: [
       {
         id: 1,
-        link: "https://images.unsplash.com/photo-1657861970480-268922fa3732?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        link: "./img/project/screenshots/dex1.jpg",
       },
       {
         id: 2,
-        link: "https://images.unsplash.com/photo-1657861970480-268922fa3732?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        link: "./img/project/screenshots/dex2.jpg",
       },
       {
         id: 3,
-        link: "https://images.unsplash.com/photo-1657861970480-268922fa3732?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        link: "./img/project/screenshots/dex3.jpg",
       },
       {
         id: 4,
-        link: "https://images.unsplash.com/photo-1657861970480-268922fa3732?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        link: "./img/project/screenshots/dex4.jpg",
       },
     ],
     links: {
@@ -83,19 +83,19 @@ export const projectData = {
     projectScreenshots: [
       {
         id: 1,
-        link: "https://images.unsplash.com/photo-1657861970480-268922fa3732?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        link: "./img/project/screenshots/default.png",
       },
       {
         id: 2,
-        link: "https://images.unsplash.com/photo-1657864583676-0b2bc2dc4045?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80",
+        link: "./img/project/screenshots/default.png",
       },
       {
         id: 3,
-        link: "https://images.unsplash.com/photo-1657861970480-268922fa3732?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        link: "./img/project/screenshots/default.png",
       },
       {
         id: 4,
-        link: "https://images.unsplash.com/photo-1657861970480-268922fa3732?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        link: "./img/project/screenshots/default.png",
       },
     ],
     links: {
@@ -118,19 +118,19 @@ export const projectData = {
     projectScreenshots: [
       {
         id: 1,
-        link: "https://images.unsplash.com/photo-1657861970480-268922fa3732?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        link: "./img/project/screenshots/default.png",
       },
       {
         id: 2,
-        link: "https://images.unsplash.com/photo-1657864583676-0b2bc2dc4045?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80",
+        link: "./img/project/screenshots/default.png",
       },
       {
         id: 3,
-        link: "https://images.unsplash.com/photo-1657861970480-268922fa3732?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        link: "./img/project/screenshots/default.png",
       },
       {
         id: 4,
-        link: "https://images.unsplash.com/photo-1657864583676-0b2bc2dc4045?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80",
+        link: "./img/project/screenshots/default.png",
       },
     ],
     links: {

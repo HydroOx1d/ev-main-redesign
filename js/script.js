@@ -86,7 +86,7 @@ for (let i = 0; i < projectNavItem.length; i++) {
 
     setTimeout(() => {
       projectBody.classList.remove("_visible-with-opacity");
-    }, 400)
+    }, 500)
   });
 }
 
