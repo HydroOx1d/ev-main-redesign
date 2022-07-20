@@ -120,3 +120,8 @@ if(projectImages) {
   }
 }
  
+document.body.onclick = function(e) {
+  if(e.target === e.target.closest('.modal')) {
+    document.querySelector('.modal').remove()
+  }
+}
