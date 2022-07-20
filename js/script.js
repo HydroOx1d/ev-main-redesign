@@ -125,3 +125,13 @@ document.body.onclick = function(e) {
     document.querySelector('.modal').remove()
   }
 }
+
+const footerColumns = document.querySelectorAll('.footer__column');
+
+if(footerColumns) {
+  if (window.innerWidth < 768 && window.innerWidth > 576) {
+    let footerColumn1 = footerColumns[3].outerHTML;
+    footerColumns[3].outerHTML = footerColumns[1].outerHTML;
+    footerColumns[1].outerHTML = footerColumn1;
+  }
+}
