@@ -9,11 +9,16 @@ hamburger.addEventListener("click", () => {
     headerNavigation.classList.add("_nav-is-active");
     headerLanguage.style.display = "block";
     document.body.style.overflow = "hidden";
+    document.querySelector('.header').style.backgroundColor = '#fff';
+    document.querySelector('.header').style.position = 'static';
+
   } else {
     hamburger.classList.remove("is-active");
     headerNavigation.classList.remove("_nav-is-active");
     headerLanguage.style.display = "none";
     document.body.style.overflow = "auto";
+    document.querySelector('.header').style.backgroundColor = 'transparent';
+    document.querySelector('.header').style.position = 'absolute';
   }
 });
 

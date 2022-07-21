@@ -7,7 +7,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  background-color: #fffcf6;
+  background-color: #fff;
   color: #3d3d3d;
 }
 
@@ -101,6 +101,9 @@ body {
 /* HEADER -------------------------------------------------------------------------------> */
 
 .header {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
 }
 .header__container {
   display: flex;
@@ -200,14 +203,14 @@ body {
 .page__present {
 }
 .present {
-  padding: 20px 0px 90px 0px;
+  padding: 0px 0px 90px 0px;
 }
 .present__container {
   display: flex;
 }
 .present__content {
   flex: 1 1 auto;
-  margin: 52px 0px 0px 0px;
+  margin: 130px 0px 0px 0px;
 }
 .present__title {
 }
@@ -217,12 +220,19 @@ body {
 .present__btn {
   padding: 0 83.5px;
 }
-.present__image {
+.present__video {
   position: relative;
-  flex: 0 0 690px;
-  padding: 0px 0px 31% 0px;
+  height: 582px;
+  width: 1500px;
 }
-
+.present__video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* PROJECT ----------------------------------------------------------------------------------------> */
 
 .page__project {
@@ -448,7 +458,6 @@ body {
   grid-template-columns: 40% 20% auto auto;
 }
 .footer__column {
-
 }
 
 .column-footer-logo > *:not(:last-child) {
@@ -460,7 +469,7 @@ body {
 .footer__copyright {
   font-size: 14px;
   line-height: calc(24 / 14 * 100%);
-  color: #D9DBE1;
+  color: #d9dbe1;
 }
 .footer__socials {
   display: flex;
@@ -479,7 +488,7 @@ body {
   font-weight: 600;
   font-size: 16px;
   line-height: calc(24 / 16 * 100%);
-  color: #D9DBE1;
+  color: #d9dbe1;
   margin: 0px 0px 20px 0px;
 }
 .column-footer-nav__list {
@@ -518,9 +527,8 @@ body {
 .sub-footer__text {
   font-size: 12px;
   line-height: calc(15 / 12 * 100%);
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
-
 
 /* DYNAMIC STYLES ----------------------------------------------------------------> */
 

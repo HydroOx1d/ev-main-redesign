@@ -137,6 +137,6 @@ export const projectData = {
       toWebSite: "",
       toApplication: "",
     },
-    illustration: "./img/project/project-gif4.gif",
+    illustration: "./img/project/market-img.png",
   },
 };
