@@ -90,7 +90,7 @@ for (let i = 0; i < projectNavItem.length; i++) {
   });
 }
 
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
   let currentLanguage = localStorage.getItem('currentLanguageState');
   if(currentLanguage === null) {
     currentLanguage = localStorage.setItem("currentLanguageState", "en");
