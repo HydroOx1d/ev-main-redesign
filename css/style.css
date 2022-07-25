@@ -291,13 +291,13 @@ body {
   display: flex;
 }
 .project__body._visible-with-opacity .project__title {
-  animation: visibleWithOpacity 1200ms ease;
+  animation: visibleWithOpacity 500ms linear;
 }
 .project__body._visible-with-opacity .project__images {
-  animation: visibleWithOpacity 1200ms ease;
+  animation: visibleWithOpacity 500ms linear;
 }
 .project__body._visible-with-opacity .project__illustration {
-  animation: visibleWithOpacity 1200ms ease;
+  animation: visibleWithOpacity 500ms linear;
 }
 @keyframes visibleWithOpacity {
   from {
