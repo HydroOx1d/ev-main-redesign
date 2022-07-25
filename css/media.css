@@ -101,6 +101,10 @@
     padding: 0px 0px 40% 0px;
   }
 
+  .goto-document__paper-image {
+    display: none;
+  }
+
   .documents__list {
     grid-template-columns: repeat(3, 1fr);
   }

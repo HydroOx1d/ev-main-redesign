@@ -32,7 +32,7 @@ export const projectData = {
       toWebSite: "",
       toApplication: "",
     },
-    illustration: "./img/project/project-gif.gif",
+    illustration: "./img/project/illustration1.jpg",
   },
   dex: {
     title: {
@@ -67,7 +67,7 @@ export const projectData = {
       toWebSite: "",
       toApplication: "",
     },
-    illustration: "./img/project/project-gif2.gif",
+    illustration: "./img/project/illustration3.jpg",
   },
   nft: {
     title: {
@@ -102,7 +102,7 @@ export const projectData = {
       toWebSite: "",
       toApplication: "",
     },
-    illustration: "./img/project/project-gif3.gif",
+    illustration: "./img/project/illustration2.jpg",
   },
   market: {
     title: {
@@ -137,6 +137,6 @@ export const projectData = {
       toWebSite: "",
       toApplication: "",
     },
-    illustration: "./img/project/market-img.png",
+    illustration: "./img/project/illustration4.jpg",
   },
 };
