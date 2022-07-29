@@ -110,12 +110,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // -- images
 import { imageModal } from './modules/imagesModal.js';
 
-const projectImages = projectBody?.querySelectorAll('.project__image img');
+const projectImage = projectBody?.querySelectorAll('.project__image img');
 let imgSrc;
 
-if(projectImages) {
-  for (let i = 0; i < projectImages.length; i++) {
-    let currentImage = projectImages[i];
+if(projectImage) {
+  for (let i = 0; i < projectImage.length; i++) {
+    let currentImage = projectImage[i];
 
     currentImage.addEventListener("click", (e) => {
       imgSrc = e.target.src;
@@ -124,6 +124,19 @@ if(projectImages) {
     });
   }
 }
+
+const projectImages = document.querySelector('.project__images');
+const projectImageLg = document.querySelector('.project__images_lg');
+
+
+if(projectImages && projectImageLg) {
+  if(window.innerWidth < 1100) {
+    let outProjectImages = projectImages;
+    projectImageLg.innerHTML = outProjectImages.outerHTML;
+    projectImages.remove()
+  }
+}
+
  
 document.body.onclick = function(e) {
   if(e.target === e.target.closest('.modal')) {

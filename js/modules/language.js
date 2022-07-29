@@ -2,9 +2,9 @@ export const language = {
   en: {
     header: {
       links: {
-        0: "Capitalization",
+        0: "Documents",
         1: "Stocks",
-        2: "Documents",
+        2: "Capitalization",
       },
     },
     main: {
