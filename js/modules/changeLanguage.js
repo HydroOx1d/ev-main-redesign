@@ -7,7 +7,7 @@ export function changeLanguage(type) {
   const headerLinks = header?.querySelectorAll(".nav__link");
 
   headerLinks.forEach((link, i) => {
-    link.innerText = currentLanguage.header.links[i];
+    link.innerText = currentLanguage?.header.links[i];
   })
 
   const presentSection = document?.querySelector('.present');

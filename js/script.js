@@ -1,3 +1,24 @@
+import { changeLanguage } from "./modules/changeLanguage.js";
+import { visibilityProjectData } from "./modules/visibilityProjectData.js";
+import { imageModal } from './modules/imagesModal.js';
+
+// for initial set language
+let globalLanguageState;
+let inititalProjectData;
+
+document.addEventListener('DOMContentLoaded', () => {
+  let currentLanguage = localStorage.getItem('currentLanguageState');
+  if(currentLanguage === null) {
+    currentLanguage = localStorage.setItem("currentLanguageState", "en");
+  }
+  globalLanguageState = currentLanguage;
+  inititalProjectData = 'stock';
+  changeLanguage(currentLanguage);
+  visibilityProjectData(inititalProjectData, globalLanguageState);
+})
+
+
+
 const hamburger = document.querySelector(".hamburger");
 const headerNavigation = document.querySelector(".header__nav");
 const headerLanguage = document.querySelector(".header__language");
@@ -33,14 +54,10 @@ document.body.onclick = (e) => {
 };
 
 // Dropdown
-import { changeLanguage } from "./modules/changeLanguage.js";
+
 
 const currentLanguage = headerLanguage.querySelector('.language__current');
 const languageItem = languageMenu.querySelectorAll('.language__item');
-
-// for initial set language
-let globalLanguageState;
-let inititalProjectData;
 
 for(let i = 0; i < languageItem.length; i++) {
   let currentItem = languageItem[i];
@@ -62,7 +79,6 @@ for(let i = 0; i < languageItem.length; i++) {
 }
 
 // PROJECTS
-import { visibilityProjectData } from "./modules/visibilityProjectData.js";
 
 const projectNavItem = document.querySelectorAll(".project__nav-item");
 const projectBody = document.querySelector('.project__body')
@@ -95,20 +111,8 @@ for (let i = 0; i < projectNavItem.length; i++) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  let currentLanguage = localStorage.getItem('currentLanguageState');
-  if(currentLanguage === null) {
-    currentLanguage = localStorage.setItem("currentLanguageState", "en");
-  }
-  globalLanguageState = currentLanguage;
-  inititalProjectData = 'stock';
-  changeLanguage(currentLanguage);
-  visibilityProjectData(inititalProjectData, globalLanguageState);
-})
-
 
 // -- images
-import { imageModal } from './modules/imagesModal.js';
 
 const projectImage = projectBody?.querySelectorAll('.project__image img');
 let imgSrc;
