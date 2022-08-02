@@ -3,8 +3,8 @@ import { language } from "./language.js"
 export function changeLanguage(type) {
   let currentLanguage = language[type];
 
-  const header = document.querySelector('.header');
-  const headerLinks = header.querySelectorAll(".nav__link");
+  const header = document?.querySelector('.header');
+  const headerLinks = header?.querySelectorAll(".nav__link");
 
   headerLinks.forEach((link, i) => {
     link.innerText = currentLanguage.header.links[i];
