@@ -2,7 +2,7 @@ import { projectData } from "./projectData.js";
 
 const projectBody = document?.querySelector(".project__body");
 
-export function visibilityProjectData(projectName, languageType) {
+export function visibilityProjectData(projectName = 'stock', languageType = 'en') {
   if(!projectBody) return;
   let currentProject = projectData[projectName];
 
@@ -14,26 +14,26 @@ export function visibilityProjectData(projectName, languageType) {
   const linkToWebsite = projectBody.querySelector('.project__btn_website')
   const linkToApp = projectBody.querySelector('.project__btn_app')
 
-  title.innerText = currentProject.title[languageType];
+  title.innerText = currentProject?.title[languageType];
 
-  let modifiedDesc = currentProject.description[languageType].split('');
+  let modifiedDesc = currentProject?.description[languageType]?.split('');
 
-  for(let i = 0; i < modifiedDesc.length; i++) {
+  for(let i = 0; i < modifiedDesc?.length; i++) {
     if(modifiedDesc[i] == "\n") {
       modifiedDesc[i] = '<br><br>'
     } 
   }
 
-  desc.innerHTML = modifiedDesc.join('');
+  desc.innerHTML = modifiedDesc?.join('');
 
   // links
 
-  linkToWebsite.href = currentProject.links.toWebSite;
+  linkToWebsite.href = currentProject?.links.toWebSite;
 
-  if(currentProject.links.toApplication === "") {
+  if(currentProject?.links.toApplication === "") {
     linkToApp?.remove();
   } else {
-    links.insertAdjacentHTML('beforeend', `<a href="${currentProject.links.toApplication}" class="btn btn_orange project__btn project__btn_app" target="_blank"
+    links.insertAdjacentHTML('beforeend', `<a href="${currentProject?.links.toApplication}" class="btn btn_orange project__btn project__btn_app" target="_blank"
                     >App <img src="./img/project/arrow.svg" alt="arrow_right"
                   /></a>`)
   }
@@ -41,6 +41,6 @@ export function visibilityProjectData(projectName, languageType) {
   // images
   
   for(let i = 0; i < screenshots.length; i++) {
-    screenshots[i].src = currentProject.projectScreenshots[i].link;
+    screenshots[i].src = currentProject?.projectScreenshots[i].link;
   }
 }

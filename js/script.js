@@ -2,9 +2,10 @@ import { changeLanguage } from "./modules/changeLanguage.js";
 import { visibilityProjectData } from "./modules/visibilityProjectData.js";
 import { imageModal } from './modules/imagesModal.js';
 
-// for initial set language
 let globalLanguageState;
 let inititalProjectData;
+
+// for initial set language
 
 window.addEventListener('load', () => {
   let currentLanguage = localStorage.getItem('currentLanguageState');
@@ -16,7 +17,6 @@ window.addEventListener('load', () => {
   changeLanguage(currentLanguage);
   visibilityProjectData(inititalProjectData, globalLanguageState);
 })
-
 
 
 const hamburger = document.querySelector(".hamburger");

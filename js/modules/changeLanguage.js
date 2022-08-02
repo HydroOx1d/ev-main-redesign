@@ -1,11 +1,11 @@
 import { language } from "./language.js"
 
-export function changeLanguage(type) {
+export function changeLanguage(type = 'en') {
   let currentLanguage = language[type];
 
   const header = document?.querySelector('.header');
   const headerLinks = header?.querySelectorAll(".nav__link");
-
+  
   headerLinks.forEach((link, i) => {
     link.innerText = currentLanguage?.header.links[i];
   })
@@ -22,11 +22,8 @@ export function changeLanguage(type) {
   const gotoDocumentTitle = gotoDocumentsSection?.querySelector('.goto-document__title');
   const gotoDocumentButton = gotoDocumentsSection?.querySelector('.goto-document__btn');
 
-  let { title: gotoDocumentTitleValue, button: gotoDocumentButtonValue } =
-    currentLanguage?.main.documents;
-
-  if(gotoDocumentTitle) gotoDocumentTitle.innerText = gotoDocumentTitleValue;
-  if(gotoDocumentButton) gotoDocumentButton.innerText = gotoDocumentButtonValue;
+  if(gotoDocumentTitle) gotoDocumentTitle.innerText = currentLanguage?.main.documents.title;
+  if(gotoDocumentButton) gotoDocumentButton.innerText = currentLanguage?.main.documents.button;
 
   // PROJECT LINKS
 
