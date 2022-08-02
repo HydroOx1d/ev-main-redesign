@@ -6,7 +6,7 @@ import { imageModal } from './modules/imagesModal.js';
 let globalLanguageState;
 let inititalProjectData;
 
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
   let currentLanguage = localStorage.getItem('currentLanguageState');
   if(currentLanguage === null) {
     currentLanguage = localStorage.setItem("currentLanguageState", "en");

@@ -208,7 +208,6 @@ body {
 .page__present {
 }
 .present {
-  padding: 0px 0px 90px 0px;
 }
 .present__container {
   display: flex;
@@ -218,7 +217,6 @@ body {
   margin: 130px 0px 0px 0px;
 }
 .present__title {
-  font-family: "Exo 2", sans-serif;
   font-weight: 700;
 }
 .present__title:not(:last-child) {
@@ -328,7 +326,6 @@ body {
   padding: 0px 20px 0px 0px;
 }
 .project__title {
-  font-family: "Exo 2", sans-serif;
   font-weight: 600;
   font-size: 64px;
   line-height: calc(75 / 64 * 100%);

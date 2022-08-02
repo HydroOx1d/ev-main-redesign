@@ -14,10 +14,8 @@ export function changeLanguage(type) {
   const presentTitle = presentSection?.querySelector(".present__title");
   const presentButton = presentSection?.querySelector(".present__btn");
 
-  let {title: presentTitleValue, button: presentButtonValue} = currentLanguage.main.present;
-
-  if(presentTitle) presentTitle.innerText = presentTitleValue;
-  if(presentButton) presentButton.innerText = presentButtonValue;
+  if(presentTitle) presentTitle.innerText = currentLanguage?.main.present.title;
+  if(presentButton) presentButton.innerText = currentLanguage?.main.present.button;
 
 
   const gotoDocumentsSection = document?.querySelector('.goto-document');
@@ -25,7 +23,7 @@ export function changeLanguage(type) {
   const gotoDocumentButton = gotoDocumentsSection?.querySelector('.goto-document__btn');
 
   let { title: gotoDocumentTitleValue, button: gotoDocumentButtonValue } =
-    currentLanguage.main.documents;
+    currentLanguage?.main.documents;
 
   if(gotoDocumentTitle) gotoDocumentTitle.innerText = gotoDocumentTitleValue;
   if(gotoDocumentButton) gotoDocumentButton.innerText = gotoDocumentButtonValue;
@@ -36,7 +34,7 @@ export function changeLanguage(type) {
   const projectLinksText = projectSection?.querySelectorAll(".item-nav-project__text");
 
   projectLinksText?.forEach((link, i) => {
-    link.innerText = currentLanguage.main.projects[i];
+    link.innerText = currentLanguage?.main.projects[i];
   })
 
   // DOCUMENTS PAGE
@@ -46,13 +44,13 @@ export function changeLanguage(type) {
   const documentItemTitle = documentsPage?.querySelectorAll(".item-document__title");
   const documentItemDownloadLink = documentsPage?.querySelectorAll('.item-document__download-text');
 
-  if(documentsPageTitle) documentsPageTitle.innerText = currentLanguage.documentsPage.title;
+  if(documentsPageTitle) documentsPageTitle.innerText = currentLanguage?.documentsPage.title;
 
   if(documentItemTitle && documentItemDownloadLink) {
     documentItemTitle.forEach((item, i) => {
-      item.innerText = currentLanguage.documentsPage.itemTitle;
+      item.innerText = currentLanguage?.documentsPage.itemTitle;
       documentItemDownloadLink[i].innerText =
-        currentLanguage.documentsPage.itemLink;
+        currentLanguage?.documentsPage.itemLink;
     });
   }
 }
