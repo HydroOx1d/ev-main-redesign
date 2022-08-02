@@ -1,6 +1,6 @@
 import { language } from "./language.js"
 
-export function changeLanguage(type = 'en') {
+export function changeLanguage(type) {
   let currentLanguage = language[type];
 
   const header = document?.querySelector('.header');

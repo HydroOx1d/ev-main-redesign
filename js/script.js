@@ -9,12 +9,15 @@ let inititalProjectData;
 
 window.addEventListener('load', () => {
   let currentLanguage = localStorage.getItem('currentLanguageState');
+
   if(currentLanguage === null) {
     currentLanguage = localStorage.setItem("currentLanguageState", "en");
   }
-  globalLanguageState = currentLanguage;
+  
+  globalLanguageState = localStorage.getItem('currentLanguageState');
   inititalProjectData = 'stock';
-  changeLanguage(currentLanguage);
+  
+  changeLanguage(globalLanguageState);
   visibilityProjectData(inititalProjectData, globalLanguageState);
 })
 
