@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Envoys Vision</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
     <!-- STYLES -->
     <link rel="stylesheet" href="./css/habmurger.css" />
     <link rel="stylesheet" href="./css/icons-font.css" />
@@ -12,8 +30,14 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media.css" />
     <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -89,11 +113,15 @@
             <div class="present__video">
               <video
                 class=""
+                preload="auto"
                 src="./img/present/video.mp4"
                 autoplay
                 muted
                 loop
-              ></video>
+                playsinline
+              >
+                <source src="img/bg-video.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
         </section>
@@ -173,7 +201,7 @@
                 class="btn btn_orange-transparent goto-document__btn"
                 >See document</a
               >
-              <!-- <img
+              <img
                 src="./img/documents-img/white-paper.png"
                 alt="white_paper"
                 class="goto-document__paper-image paper-image__white"
@@ -182,7 +210,7 @@
                 src="./img/documents-img/red-paper.png"
                 alt="white_paper"
                 class="goto-document__paper-image paper-image__red"
-              /> -->
+              />
             </div>
           </div>
         </section>
