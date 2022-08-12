@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Envoys Vision</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
     <!-- STYLES -->
     <link rel="stylesheet" href="./css/habmurger.css" />
     <link rel="stylesheet" href="./css/icons-font.css" />
@@ -12,6 +30,8 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media.css" />
     <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap"
       rel="stylesheet"
@@ -33,11 +53,13 @@
           <nav class="header__nav nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="" class="nav__link"></a>
+                <a href="/documents.html" class="nav__link">Documents</a>
               </li>
-              <li class="nav__item"><a href="" class="nav__link"></a></li>
-              <li class="nav__item">
-                <a href="/documents.html" class="nav__link"></a>
+              <li class="nav__item _is-blocked">
+                <a href="" class="nav__link">Stocks</a>
+              </li>
+              <li class="nav__item _is-blocked">
+                <a href="" class="nav__link">Capitalization</a>
               </li>
             </ul>
           </nav>
@@ -83,17 +105,23 @@
         <section class="page__present present">
           <div class="present__container _container">
             <div class="present__content">
-              <h1 class="present__title title"></h1>
-              <a href="#project" class="btn btn_orange present__btn"></a>
+              <h1 class="present__title title">
+                Envoys Vision Digital Exchange Ecosystem
+              </h1>
+              <a href="#project" class="btn btn_orange present__btn">Try it</a>
             </div>
             <div class="present__video">
               <video
                 class=""
+                preload="auto"
                 src="./img/present/video.mp4"
                 autoplay
                 muted
                 loop
-              ></video>
+                playsinline
+              >
+                <source src="img/bg-video.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
         </section>
@@ -105,61 +133,60 @@
                 data-project="stock"
               >
                 <i class="item-nav-project__icon _icon-stock"></i>
-                <span class="item-nav-project__text"></span>
+                <span class="item-nav-project__text">Stock Exchange</span>
               </div>
               <div
                 class="btn btn_dark project__nav-item item-nav-project item-nav-project_dex"
                 data-project="dex"
               >
                 <i class="item-nav-project__icon _icon-dex"></i>
-                <span class="item-nav-project__text"></span>
+                <span class="item-nav-project__text">DEX</span>
               </div>
               <div
-                class="btn btn_dark project__nav-item item-nav-project item-nav-project_nft"
+                class="btn btn_dark project__nav-item item-nav-project item-nav-project_nft _is-blocked"
                 data-project="nft"
               >
                 <i class="item-nav-project__icon _icon-nft"></i>
-                <span class="item-nav-project__text"></span>
+                <span class="item-nav-project__text">NFT</span>
               </div>
               <div
-                class="btn btn_dark project__nav-item item-nav-project item-nav-project_market"
+                class="btn btn_dark project__nav-item item-nav-project item-nav-project_market _is-blocked"
                 data-project="market"
               >
                 <i class="item-nav-project__icon _icon-market"></i>
-                <span class="item-nav-project__text"></span>
+                <span class="item-nav-project__text">Market</span>
               </div>
             </nav>
             <div class="project__body">
               <div class="project__content">
                 <h2 class="project__title"></h2>
                 <div class="project__description"></div>
-                <div class="project__images">
-                  <div class="project__image _ibg">
-                    <img src="" alt="image" />
-                  </div>
-                  <div class="project__image _ibg">
-                    <img src="" alt="image" />
-                  </div>
-                  <div class="project__image _ibg">
-                    <img src="" alt="image" />
-                  </div>
-                  <div class="project__image _ibg">
-                    <img src="" alt="image" />
-                  </div>
-                </div>
+                <div class="project__images_lg"></div>
                 <div class="project__btns">
                   <a
-                    class="btn btn_orange-transparent project_ project__btn_website"
+                    target="_blank"
+                    class="btn btn_orange-transparent project__btn project__btn_website"
                     >Web-Site</a
                   >
-                  <a class="btn btn_orange project__btn_app"
-                    >App <img src="./img/project/arrow.svg" alt="arrow_right"
-                  /></a>
                 </div>
               </div>
-              <div class="project__illustration _ibg">
-                <img src="" alt="illustration" />
+              <div class="project__images">
+                <div class="project__image _ibg">
+                  <img src="" alt="image" />
+                </div>
+                <div class="project__image _ibg">
+                  <img src="" alt="image" />
+                </div>
+                <div class="project__image _ibg">
+                  <img src="" alt="image" />
+                </div>
+                <div class="project__image _ibg">
+                  <img src="" alt="image" />
+                </div>
               </div>
+              <!-- <div class="project__illustration _ibg">
+                <img src="" alt="illustration" />
+              </div> -->
             </div>
           </div>
         </section>
@@ -279,7 +306,7 @@
             for him, taking into account his financial capabilities. Please note
             that Markets does not provide services to citizens and residents in
             the following countries. Markets Ltd. has no representative offices
-            of the company on the territory of the Russian Federation.
+            of the company on the territory of the Kyrgyz Republic.
           </div>
         </div>
       </div>
