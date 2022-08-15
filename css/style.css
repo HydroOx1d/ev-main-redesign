@@ -347,9 +347,11 @@ body {
     gap: 5px;
     border: 1px solid #EFF2FF;
 }
-.project__link--orange{
+
+.project__link--orange {
     padding: 7px 32px;
 }
+
 .project__link-orange--transparent {
     color: #F48020;
 }
@@ -357,9 +359,11 @@ body {
 /* DOCUMENT ------------------------------------------------------------------------------------> */
 
 .goto-document {
-    margin-bottom: 140px;
+    height: 550px;
+    margin-bottom: 105px;
 }
-.document__title{
+
+.document__title {
     font-family: 'Exo 2';
     font-weight: 700;
     font-size: 48px;
@@ -367,17 +371,21 @@ body {
     text-align: center;
     color: #252525;
     margin-bottom: 85px;
+
 }
-.document__content{
+
+.document__content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-.document__col{
+
+.document__col {
     max-width: 270px;
     cursor: pointer;
 }
-.document__col-iblock{
+
+.document__col-iblock {
     border: 5px solid #F4F4F4;
     border-radius: 8px;
     height: 300px;
@@ -387,11 +395,13 @@ body {
     transition: .3s ease-in-out;
     overflow: hidden;
 }
-.document__col-img{
+
+.document__col-img {
     width: 100%;
     object-fit: cover;
 }
-.document__col-button{
+
+.document__col-button {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -402,11 +412,13 @@ body {
     padding: 8px 11px;
     transition: .3s ease-in-out;
 }
-.document__col-icon{
+
+.document__col-icon {
     stroke: #252525;
     transition: .3s ease-in-out;
 }
-.document__col-title{
+
+.document__col-title {
     font-family: 'Roboto Flex';
     font-style: normal;
     font-weight: 700;
@@ -414,6 +426,7 @@ body {
     line-height: calc(23 / 20 * 100%);
     color: #505050;
 }
+
 /* FOOTER ---------------------------------------------------------------------------> */
 
 .footer {

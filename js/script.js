@@ -2,7 +2,6 @@ import {changeLanguage} from "./modules/changeLanguage.js";
 import {visibilityProjectData} from "./modules/visibilityProjectData.js";
 import {imageModal} from "./modules/imagesModal.js";
 import {documentsData} from "./modules/documentsData.js";
-import {cutText} from "./modules/cutText.js"
 
 let globalLanguageState;
 let inititalProjectData;
@@ -198,16 +197,3 @@ function renderDocuments(lang) {
     documentsList.insertAdjacentHTML("beforeend", documentMarkup);
   });
 }
-
-let textItem = document.querySelectorAll('.document__title');
-
-// function kitcut( text ) {
-//   for (let i = 0; i < textItem.length; i++) {
-//     text = i.trim();
-//     if (text.length <= 3) return text;
-//     text = text.slice(0, 3);
-//   }
-//   return text.innerText = text.trim() + "...";
-// }
-//
-// kitcut()

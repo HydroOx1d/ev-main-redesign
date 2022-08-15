@@ -17,11 +17,12 @@
     .project__content {
         justify-content: flex-start;
     }
+
     .project__title {
         font-size: 36px;
     }
 
-    .document__content{
+    .document__content {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         justify-content: center;
@@ -124,11 +125,11 @@
     .header__nav._nav-is-active {
         padding: 50px 15px 0px 15px;
     }
-    .project__title{
+
+    .project__title {
         font-size: 28px;
     }
 }
-
 
 
 @media (max-width: 675px) {
@@ -156,21 +157,25 @@
         height: 250px;
     }
 
-    .project__item{
+    .project__item {
         padding: 30px 20px;
     }
+
     .project__title {
         font-size: 38px;
     }
-    .document__content{
+
+    .document__content {
         grid-template-columns: repeat(1, 450px);
     }
+
     .footer__container {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         row-gap: 40px;
     }
 }
+
 @media (max-width: 475px) {
     .document__content {
         grid-template-columns: repeat(1, 1fr);
@@ -204,26 +209,32 @@
     .project__link:hover {
         background: #3362a0;
     }
+
     .project__link--transparent:hover {
         border-color: #4478BB;
         background: #EFF2FF;
     }
+
     .project__link-orange--transparent:hover {
         border-color: #F48020;
         background: #EFF2FF;
     }
 
-    .document__col:hover .document__col-iblock{
+    .document__col:hover .document__col-iblock {
         border-color: #E3E3E3;
     }
-    .document__col:hover .document__col-title{
+
+    .document__col:hover .document__col-title {
         color: #252525;
     }
-    .document__col:hover .document__col-icon{
+
+    .document__col:hover .document__col-icon {
         stroke: #4478BB;
     }
-    .document__col:hover .document__col-button{
+
+    .document__col:hover .document__col-button {
         background: #FCFCFC;
     }
-    
+
+
 }
