@@ -45,8 +45,7 @@ body {
     align-items: center;
 }
 
-.logo__image {
-}
+.logo__image {}
 
 .logo__image:not(:last-child) {
     margin: 0px 10px 0px 0px;
@@ -120,22 +119,19 @@ body {
     margin: 0px 95px 0px 0px;
 }
 
-.header__nav {
-}
+.header__nav {}
 
-.nav {
-}
+.nav {}
 
 .nav__list {
     display: flex;
 }
 
-.nav__list > *:not(:last-child) {
+.nav__list>*:not(:last-child) {
     margin: 0px 80px 0px 0px;
 }
 
-.nav__item {
-}
+.nav__item {}
 
 .nav__item._is-blocked {
     color: #c1c1c1;
@@ -227,11 +223,9 @@ body {
 
 /* PRESENT ----------------------------------------------------------------------------------> */
 
-.project__present {
-}
+.project__present {}
 
-.present {
-}
+.present {}
 
 .present__container {
     display: flex;
@@ -363,6 +357,10 @@ body {
     margin-bottom: 105px;
 }
 
+.document__container {
+    max-width: 1140px;
+}
+
 .document__title {
     font-family: 'Exo 2';
     font-weight: 700;
@@ -427,6 +425,20 @@ body {
     color: #505050;
 }
 
+.document__col-title._is-hovered {
+    animation: colTitleIsHovered 300ms ease-in-out;
+}
+
+@keyframes colTitleIsHovered {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .documents {
     padding: 100px 0;
 }
@@ -446,8 +458,7 @@ body {
     gap: 24px;
 }
 
-.documents__item {
-}
+.documents__item {}
 
 .item-document {
     border: 3px solid #0f2b46;
@@ -501,15 +512,13 @@ body {
     grid-template-columns: 40% 20% auto auto;
 }
 
-.footer__column {
-}
+.footer__column {}
 
-.column-footer-logo > *:not(:last-child) {
+.column-footer-logo>*:not(:last-child) {
     margin: 0px 0px 20px 0px;
 }
 
-.footer__logo {
-}
+.footer__logo {}
 
 .footer__copyright {
     font-size: 14px;
@@ -522,18 +531,15 @@ body {
     align-items: center;
 }
 
-.footer__socials > *:not(:first-child) {
+.footer__socials>*:not(:first-child) {
     margin: 0 0 0 16px;
 }
 
-.footer__social {
-}
+.footer__social {}
 
-.footer__social-icon {
-}
+.footer__social-icon {}
 
-.column-footer-nav {
-}
+.column-footer-nav {}
 
 .column-footer-nav__title {
     font-weight: 600;
@@ -543,11 +549,9 @@ body {
     margin: 0px 0px 20px 0px;
 }
 
-.column-footer-nav__list {
-}
+.column-footer-nav__list {}
 
-.column-footer-nav__item {
-}
+.column-footer-nav__item {}
 
 .column-footer-nav__item:not(:last-child) {
     margin: 0px 0px 20px 0px;
@@ -580,8 +584,7 @@ body {
     max-width: 1045px;
 }
 
-._container {
-}
+._container {}
 
 .sub-footer__text {
     font-size: 12px;
@@ -609,6 +612,7 @@ body {
     from {
         transform: scale(0);
     }
+
     to {
         transform: scale(1);
     }
