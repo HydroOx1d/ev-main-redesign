@@ -1,7 +1,7 @@
-import { changeLanguage } from "./modules/changeLanguage.js";
-import { visibilityProjectData } from "./modules/visibilityProjectData.js";
-import { imageModal } from "./modules/imagesModal.js";
-import { documentsData } from "./modules/documentsData.js";
+import {changeLanguage} from "./modules/changeLanguage.js";
+import {visibilityProjectData} from "./modules/visibilityProjectData.js";
+import {imageModal} from "./modules/imagesModal.js";
+import {documentsData} from "./modules/documentsData.js";
 
 let globalLanguageState;
 let inititalProjectData;
