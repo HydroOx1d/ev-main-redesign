@@ -363,6 +363,10 @@ body {
     margin-bottom: 105px;
 }
 
+.document__container {
+    max-width: 1140px;
+}
+
 .document__title {
     font-family: 'Exo 2';
     font-weight: 700;
@@ -427,6 +431,19 @@ body {
     color: #505050;
 }
 
+.document__col-title._is-hovered {
+    animation: colTitleIsHovered 300ms ease-in-out;
+}
+
+@keyframes colTitleIsHovered {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 /* FOOTER ---------------------------------------------------------------------------> */
 
 .footer {

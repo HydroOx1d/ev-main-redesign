@@ -1,7 +1,7 @@
-import {changeLanguage} from "./modules/changeLanguage.js";
-import {visibilityProjectData} from "./modules/visibilityProjectData.js";
-import {imageModal} from "./modules/imagesModal.js";
-import {documentsData} from "./modules/documentsData.js";
+import { changeLanguage } from "./modules/changeLanguage.js";
+import { visibilityProjectData } from "./modules/visibilityProjectData.js";
+import { imageModal } from "./modules/imagesModal.js";
+import { documentsData } from "./modules/documentsData.js";
 
 let globalLanguageState;
 let inititalProjectData;
@@ -164,11 +164,58 @@ if (footerColumns) {
 }
 
 // Documents
+function sliceText(str) {
+  if (typeof str !== 'string') {
+    throw new Error('Not string')
+  }
+  const maxLength = 40;
+  const resultString = [];
+  const sliceParamString = str.split(" ");
+  let i = 0;
+
+  while (true) {
+    if (i === sliceParamString.length - 1) break;
+    resultString.push(sliceParamString[i]);
+    if (resultString.join(" ").length >= maxLength) {
+      return resultString.join(" ") + "...";
+    }
+    i++;
+  }
+
+  return str;
+}
+
+const cols = document.querySelectorAll('.document__col');
+const colTitles = document.querySelectorAll(".document__col-title");
+
+const cache = new Map();
+
+cols.forEach((col, i) => {
+
+
+  if (!cache.has(i)) {
+    cache.set(i, colTitles[i].innerHTML);
+  }
+
+  col.addEventListener('mouseenter', () => {
+    colTitles[i].innerHTML = cache.get(i);
+    colTitles[i].classList.add('_is-hovered')
+  })
+
+  col.addEventListener('mouseleave', () => {
+    colTitles[i].innerHTML = sliceText(cache.get(i));
+    colTitles[i].classList.remove('_is-hovered')
+  })
+
+
+  colTitles[i].innerHTML = sliceText(colTitles[i].innerHTML);
+
+})
 
 function renderDocuments(lang) {
-  const documentsList = document.querySelector(".documents__list");
+  const documentsList = document?.querySelector(".documents__list");
 
-  if (documentsList.children.length > 0) {
+  if (documentsList?.children.length > 0) {
     documentsList.innerHTML = "";
   }
 
