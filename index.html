@@ -1,356 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Envoys Vision</title>
-  <link
-    rel="apple-touch-icon"
-    sizes="180x180"
-    href="./img/favicon/apple-touch-icon.png"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="./img/favicon/favicon-32x32.png"
-  />
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="16x16"
-    href="./img/favicon/favicon-16x16.png"
-  />
-  <link rel="manifest" href="./img/favicon/site.webmanifest"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./img/favicon/site.webmanifest" />
   <!-- STYLES -->
-  <link rel="stylesheet" href="./css/habmurger.css"/>
-  <link rel="stylesheet" href="./css/icons-font.css"/>
-  <link rel="stylesheet" href="./css/clear.css"/>
-  <link rel="stylesheet" href="./css/style.css"/>
-  <link rel="stylesheet" href="./css/media.css"/>
+  <link rel="stylesheet" href="./css/habmurger.css" />
+  <link rel="stylesheet" href="./css/icons-font.css" />
+  <link rel="stylesheet" href="./css/clear.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/media.css" />
   <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700&display=swap" rel="stylesheet" />
 </head>
+
 <body>
-<div class="wrapper">
-  <header class="header">
-    <div class="header__container _container">
-      <div class="header__logo logo">
-        <a href="/index.html"
-        ><img src="./img/header/logo.svg" alt="logo" class="logo__image"
-        /></a>
-      </div>
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="/documents.html" class="nav__link">Documents</a>
-          </li>
-          <li class="nav__item _is-blocked">
-            <a href="" class="nav__link">Stocks</a>
-          </li>
-          <li class="nav__item _is-blocked">
-            <a href="" class="nav__link">Capitalization</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__language language">
-        <div class="language__current">
-          <img
-            src="./img/header/us.svg"
-            alt="usa_icon"
-            class="language__flag"
-          />
-          <span class="language__text">English</span>
-          <img
-            src="./img/header/arrow-bottom.svg"
-            alt="arrow_bottom"
-            class="language__arrow"
-          />
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container _container">
+        <div class="header__logo logo">
+          <a href="/index.html"><img src="./img/header/logo.svg" alt="logo" class="logo__image" /></a>
         </div>
-        <nav class="language__menu">
-          <ul class="language__list">
-            <li data-language="en" class="language__item">
-              <img src="./img/header/us.svg" alt="usa"/>English
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/documents.html" class="nav__link">Documents</a>
             </li>
-            <li data-language="ru" class="language__item">
-              <img src="./img/header/russia.svg" alt="usa"/>Russian
+            <li class="nav__item _is-blocked">
+              <a href="" class="nav__link">Stocks</a>
             </li>
-            <li data-language="ch" class="language__item">
-              <img src="./img/header/china.svg" alt="usa"/>China
+            <li class="nav__item _is-blocked">
+              <a href="" class="nav__link">Capitalization</a>
             </li>
           </ul>
         </nav>
+        <div class="header__language language">
+          <div class="language__current">
+            <img src="./img/header/us.svg" alt="usa_icon" class="language__flag" />
+            <span class="language__text">English</span>
+            <img src="./img/header/arrow-bottom.svg" alt="arrow_bottom" class="language__arrow" />
+          </div>
+          <nav class="language__menu">
+            <ul class="language__list">
+              <li data-language="en" class="language__item">
+                <img src="./img/header/us.svg" alt="usa" />English
+              </li>
+              <li data-language="ru" class="language__item">
+                <img src="./img/header/russia.svg" alt="usa" />Russian
+              </li>
+              <li data-language="ch" class="language__item">
+                <img src="./img/header/china.svg" alt="usa" />China
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__hamburger">
+          <button class="hamburger hamburger--spring" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
       </div>
-      <div class="header__hamburger">
-        <button class="hamburger hamburger--spring" type="button">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-        </button>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="page">
-    <section class="page__present present">
-      <div class="present__container _container">
-        <div class="present__content">
-          <h1 class="present__title title">
-            Envoys Vision Digital Exchange Ecosystem
-          </h1>
-          <a href="#project" class="btn btn_orange present__btn">Try it</a>
+    <main class="page">
+      <section class="page__present present">
+        <div class="present__container _container">
+          <div class="present__content">
+            <h1 class="present__title title">
+              Envoys Vision Digital Exchange Ecosystem
+            </h1>
+            <a href="#project" class="btn btn_orange present__btn">Try it</a>
+          </div>
+          <div class="present__video">
+            <video class="" preload="auto" src="./img/present/video.mp4" autoplay muted loop playsinline>
+              <source src="img/bg-video.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
-        <div class="present__video">
-          <video
-            class=""
-            preload="auto"
-            src="./img/present/video.mp4"
-            autoplay
-            muted
-            loop
-            playsinline
-          >
-            <source src="img/bg-video.mp4" type="video/mp4"/>
-          </video>
-        </div>
-      </div>
-    </section>
-    <section id="project" class="page__project project">
-      <div class="project__container _container">
-        <div class="project__content">
-          <div class="project__column">
-            <div class="project__item">
-              <h2 class="project__title">Stock Exchange</h2>
-              <p class="project__desc">The stock Exchange is an online platform of Envoys Vision, where you can trade
-                assets
-                such as stocks, bonds, investment units and more complex instruments, such as options and futures.
-                Envoys
-                Vision ensures that all parties fulfill their obligations and transactions take place quickly and
-                reliably.</p>
-              <div class="project__links">
-                <a href="#" class="btn project__link">Web-Site</a>
-                <a href="#" class="btn project__link project__link--transparent">App
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.83333 3.33335L14.5 8.00002L9.83333 12.6667" stroke="#4478BB" stroke-linecap="round"
-                          stroke-linejoin="round"/>
-                    <path d="M14.5 8L2.5 8" stroke="#4478BB" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </a>
+      </section>
+      <section id="project" class="page__project project">
+        <div class="project__container _container">
+          <div class="project__content">
+            <div class="project__column">
+              <div class="project__item">
+                <h2 class="project__title">Stock Exchange</h2>
+                <p class="project__desc">The stock Exchange is an online platform of Envoys Vision, where you can trade
+                  assets
+                  such as stocks, bonds, investment units and more complex instruments, such as options and futures.
+                  Envoys
+                  Vision ensures that all parties fulfill their obligations and transactions take place quickly and
+                  reliably.</p>
+                <div class="project__links">
+                  <a href="https://ls.envoys.vision/" target="_blank" class="btn project__link">Web-Site</a>
+                  <a href="https://app.envoys.vision/" target="_blank"
+                    class="btn project__link project__link--transparent">App
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.83333 3.33335L14.5 8.00002L9.83333 12.6667" stroke="#4478BB" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M14.5 8L2.5 8" stroke="#4478BB" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="project__column">
-            <div class="project__item project__item--orange">
-              <h2 class="project__title project__title--orange">DEX</h2>
-              <p class="project__desc">Decentralized financial services, or decentralized finance, is a common name for
-                analogues of traditional financial instruments implemented in a decentralized architecture. These
-                services
-                are publicly available, are open source projects and are most often based on smart contracts.</p>
-              <div class="project__links">
-                <a href="#" class="btn btn_orange project__link--orange ">Web-Site</a>
-                <a href="#"
-                   class="btn project__link--orange project__link-orange--transparent project__link--transparent">App
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.83333 3.33335L14.5 8.00002L9.83333 12.6667" stroke="#F48020" stroke-linecap="round"
-                          stroke-linejoin="round"/>
-                    <path d="M14.5 8L2.5 8" stroke="#F48020" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </a>
+            <div class="project__column">
+              <div class="project__item project__item--orange">
+                <h2 class="project__title project__title--orange">DEX</h2>
+                <p class="project__desc">Decentralized financial services, or decentralized finance, is a common name
+                  for
+                  analogues of traditional financial instruments implemented in a decentralized architecture. These
+                  services
+                  are publicly available, are open source projects and are most often based on smart contracts.</p>
+                <div class="project__links">
+                  <a href="https://ld.envoys.vision/" target="_blank"
+                    class="btn btn_orange project__link--orange ">Web-Site</a>
+                </div>
               </div>
             </div>
-          </div>
 
-        </div>
-      </div>
-    </section>
-    <section class="page__goto-document goto-document">
-      <div class="document__container _container">
-        <h1 class="document__title">Download our documents</h1>
-        <div class="document__content">
-          <div class="document__col">
-            <div class="document__col-iblock">
-              <img src="./img/documents-img/doc-img.jpg" alt="" class="document__col-img">
-              <a href="#" download class="document__col-button">
-                <svg class="document__col-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M19 10H20C20.2652 10 20.5196 10.1054 20.7071 10.2929C20.8946 10.4804 21 10.7348 21 11V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V11C3 10.7348 3.10536 10.4804 3.29289 10.2929C3.48043 10.1054 3.73478 10 4 10H5"
-                    stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M15 14L12 17L9 14" stroke="current" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                  <path d="M15 9L12 12L9 9" stroke="current" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                  <path d="M12 12V3" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </a>
-            </div>
-            <h2 class="document__col-title">License to organize trading on the securities market securities market securities market</h2>
-          </div>
-          <div class="document__col">
-            <div class="document__col-iblock">
-              <img src="./img/documents-img/doc-img.jpg" alt="" class="document__col-img">
-              <button class="document__col-button">
-                <svg class="document__col-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M19 10H20C20.2652 10 20.5196 10.1054 20.7071 10.2929C20.8946 10.4804 21 10.7348 21 11V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V11C3 10.7348 3.10536 10.4804 3.29289 10.2929C3.48043 10.1054 3.73478 10 4 10H5"
-                    stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M15 14L12 17L9 14" stroke="current" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                  <path d="M15 9L12 12L9 9" stroke="current" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                  <path d="M12 12V3" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </button>
-            </div>
-            <h2 class="document__col-title">License to organize trading on the securities market securities market securities market</h2>
-          </div>
-          <div class="document__col">
-            <div class="document__col-iblock">
-              <img src="./img/documents-img/doc-img.jpg" alt="" class="document__col-img">
-              <button class="document__col-button">
-                <svg class="document__col-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M19 10H20C20.2652 10 20.5196 10.1054 20.7071 10.2929C20.8946 10.4804 21 10.7348 21 11V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V11C3 10.7348 3.10536 10.4804 3.29289 10.2929C3.48043 10.1054 3.73478 10 4 10H5"
-                    stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M15 14L12 17L9 14" stroke="current" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                  <path d="M15 9L12 12L9 9" stroke="current" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                  <path d="M12 12V3" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </button>
-            </div>
-            <h2 class="document__col-title">License to organize trading on the securities market securities market securities market</h2>
-          </div>
-          <div class="document__col">
-            <div class="document__col-iblock">
-              <img src="./img/documents-img/doc-img.jpg" alt="" class="document__col-img">
-              <button class="document__col-button">
-                <svg class="document__col-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M19 10H20C20.2652 10 20.5196 10.1054 20.7071 10.2929C20.8946 10.4804 21 10.7348 21 11V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V11C3 10.7348 3.10536 10.4804 3.29289 10.2929C3.48043 10.1054 3.73478 10 4 10H5"
-                    stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M15 14L12 17L9 14" stroke="current" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                  <path d="M15 9L12 12L9 9" stroke="current" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round"/>
-                  <path d="M12 12V3" stroke="current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </button>
-            </div>
-            <h2 class="document__col-title">License to organize trading on the securities market securities market securities market</h2>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+      <section class="page__goto-document goto-document">
+        <div class="document__container _container">
+          <h1 class="document__title">Download our documents</h1>
+          <div class="document__content"></div>
+        </div>
+      </section>
+    </main>
 
-  <footer class="footer">
-    <div class="footer__container _container">
-      <div class="footer__column column-footer-logo">
-        <div class="footer__logo logo">
-          <img src="./img/header/logo.svg" alt="logo" class="logo__image"/>
-          <div class="logo__text">Envoys Vision</div>
+    <footer class="footer">
+      <div class="footer__container _container">
+        <div class="footer__column column-footer-logo">
+          <div class="footer__logo logo">
+            <img src="./img/header/logo.svg" alt="logo" class="logo__image" />
+            <div class="logo__text">Envoys Vision</div>
+          </div>
+          <div class="footer__copyright">
+            © 2022 Envoys Vision. All rights reserved
+          </div>
+          <div class="footer__socials">
+            <a href="" class="footer__social"><img src="./img/footer/insta.svg" alt="instagram"
+                class="footer__social-icon" /></a>
+            <a href="" class="footer__social"><img src="./img/footer/facebook.svg" alt="facebook"
+                class="footer__social-icon" /></a>
+            <a href="" class="footer__social"><img src="./img/footer/twitter.svg" alt="twitter"
+                class="footer__social-icon" /></a>
+            <a href="" class="footer__social"><img src="./img/footer/linkedin.svg" alt="linkedin"
+                class="footer__social-icon" /></a>
+          </div>
         </div>
-        <div class="footer__copyright">
-          © 2022 Envoys Vision. All rights reserved
+        <div class="footer__column column-footer-nav">
+          <div class="column-footer-nav__title">Navigation</div>
+          <ul class="column-footer-nav__list">
+            <li class="column-footer-nav__item">
+              <a href="" class="column-footer-nav__link">Сapitalization</a>
+            </li>
+            <li class="column-footer-nav__item">
+              <a href="" class="column-footer-nav__link">Stocks</a>
+            </li>
+            <li class="column-footer-nav__item">
+              <a href="" class="column-footer-nav__link">Documents</a>
+            </li>
+          </ul>
         </div>
-        <div class="footer__socials">
-          <a href="" class="footer__social"
-          ><img
-            src="./img/footer/insta.svg"
-            alt="instagram"
-            class="footer__social-icon"
-          /></a>
-          <a href="" class="footer__social"
-          ><img
-            src="./img/footer/facebook.svg"
-            alt="facebook"
-            class="footer__social-icon"
-          /></a>
-          <a href="" class="footer__social"
-          ><img
-            src="./img/footer/twitter.svg"
-            alt="twitter"
-            class="footer__social-icon"
-          /></a>
-          <a href="" class="footer__social"
-          ><img
-            src="./img/footer/linkedin.svg"
-            alt="linkedin"
-            class="footer__social-icon"
-          /></a>
+        <div class="footer__column column-footer-nav">
+          <div class="column-footer-nav__title">Politic & Privacy</div>
+          <ul class="column-footer-nav__list">
+            <li class="column-footer-nav__item">
+              <a href="" class="column-footer-nav__link">Privacy policy</a>
+            </li>
+            <li class="column-footer-nav__item">
+              <a href="" class="column-footer-nav__link">AML Policy</a>
+            </li>
+            <li class="column-footer-nav__item">
+              <a href="" class="column-footer-nav__link">Personal data processing conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column column-footer-nav">
+          <div class="column-footer-nav__title">Get the App</div>
+          <a class="column-footer-nav__app" href=""><img src="./img/footer/GooglePlayBadge.svg"
+              alt="google_play_image" /></a>
+          <a class="column-footer-nav__app" href=""><img src="./img/footer/AppStoreBadge.svg"
+              alt="app_play_image" /></a>
         </div>
       </div>
-      <div class="footer__column column-footer-nav">
-        <div class="column-footer-nav__title">Navigation</div>
-        <ul class="column-footer-nav__list">
-          <li class="column-footer-nav__item">
-            <a href="" class="column-footer-nav__link">Сapitalization</a>
-          </li>
-          <li class="column-footer-nav__item">
-            <a href="" class="column-footer-nav__link">Stocks</a>
-          </li>
-          <li class="column-footer-nav__item">
-            <a href="" class="column-footer-nav__link">Documents</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__column column-footer-nav">
-        <div class="column-footer-nav__title">Politic & Privacy</div>
-        <ul class="column-footer-nav__list">
-          <li class="column-footer-nav__item">
-            <a href="" class="column-footer-nav__link">Privacy policy</a>
-          </li>
-          <li class="column-footer-nav__item">
-            <a href="" class="column-footer-nav__link">AML Policy</a>
-          </li>
-          <li class="column-footer-nav__item">
-            <a href="" class="column-footer-nav__link"
-            >Personal data processing conditions</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="footer__column column-footer-nav">
-        <div class="column-footer-nav__title">Get the App</div>
-        <a class="column-footer-nav__app" href=""
-        ><img
-          src="./img/footer/GooglePlayBadge.svg"
-          alt="google_play_image"
-        /></a>
-        <a class="column-footer-nav__app" href=""
-        ><img src="./img/footer/AppStoreBadge.svg" alt="app_play_image"
-        /></a>
-      </div>
-    </div>
-  </footer>
-  <div class="sub-footer">
-    <div class="sub-footer__container _container">
-      <div class="sub-footer__text">
-        Risk warning: Trading in financial instruments is a risky activity
-        and can bring not only profit, but also losses. The amount of
-        possible losses is limited by the amount of the deposit. The client
-        must decide for himself whether this type of activity is suitable
-        for him, taking into account his financial capabilities. Please note
-        that Markets does not provide services to citizens and residents in
-        the following countries. Markets Ltd. has no representative offices
-        of the company on the territory of the Kyrgyz Republic.
+    </footer>
+    <div class="sub-footer">
+      <div class="sub-footer__container _container">
+        <div class="sub-footer__text">
+          Risk warning: Trading in financial instruments is a risky activity
+          and can bring not only profit, but also losses. The amount of
+          possible losses is limited by the amount of the deposit. The client
+          must decide for himself whether this type of activity is suitable
+          for him, taking into account his financial capabilities. Please note
+          that Markets does not provide services to citizens and residents in
+          the following countries. Markets Ltd. has no representative offices
+          of the company on the territory of the Kyrgyz Republic.
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- SCRIPTS -->
-<script type="module" src="./js/script.js"></script>
+  <!-- SCRIPTS -->
+  <script type="module" src="./js/script.js"></script>
 </body>
+
 </html>
