@@ -1,10 +1,8 @@
 import { changeLanguage } from "./modules/changeLanguage.js";
 import { visibilityProjectData } from "./modules/visibilityProjectData.js";
-import { imageModal } from "./modules/imagesModal.js";
 import { documentsData } from "./modules/documentsData.js";
 
 let globalLanguageState;
-let inititalProjectData;
 
 // for initial set language
 
@@ -12,14 +10,14 @@ window.addEventListener("load", () => {
   let currentLanguage = localStorage.getItem("currentLanguageState");
 
   if (currentLanguage === null) {
-    currentLanguage = localStorage.setItem("currentLanguageState", "en");
+    localStorage.setItem("currentLanguageState", "en");
   }
 
   globalLanguageState = localStorage.getItem("currentLanguageState");
-  inititalProjectData = "stock";
 
+  identifyLanguage(globalLanguageState)
   changeLanguage(globalLanguageState);
-  visibilityProjectData(inititalProjectData, globalLanguageState);
+  visibilityProjectData(globalLanguageState);
   renderDocuments(globalLanguageState);
 });
 
@@ -78,80 +76,24 @@ for (let i = 0; i < languageItem.length; i++) {
 
     changeLanguage(globalLanguageState);
 
-    visibilityProjectData(inititalProjectData, globalLanguageState);
+    visibilityProjectData(globalLanguageState);
 
     renderDocuments(globalLanguageState);
   });
 }
 
-// PROJECTS
+function identifyLanguage(langType) {
+  const identifiedLanguage = document?.getElementById(langType)
 
-const projectNavItem = document.querySelectorAll(".project__nav-item");
-const projectBody = document.querySelector(".project__body");
-
-let activeNav = 0;
-
-for (let i = 0; i < projectNavItem.length; i++) {
-  let current = projectNavItem[i];
-
-  projectNavItem[activeNav].classList.add("_is-active");
-
-  current.addEventListener("click", (e) => {
-    if (i !== activeNav) {
-      projectNavItem[activeNav].classList.remove("_is-active");
-    }
-
-    activeNav = i;
-
-    projectNavItem[activeNav].classList.add("_is-active");
-
-    inititalProjectData = current.dataset.project;
-
-    visibilityProjectData(inititalProjectData, globalLanguageState);
-
-    projectBody.classList.add("_visible-with-opacity");
-
-    setTimeout(() => {
-      projectBody.classList.remove("_visible-with-opacity");
-    }, 500);
-  });
+  // Current Flag
+  currentLanguage.querySelector(".language__flag").src =
+    identifiedLanguage?.querySelector("img").src;
+  // Current Text
+  currentLanguage.querySelector(".language__text").innerText =
+    identifiedLanguage?.textContent.trim();
 }
 
-// -- images
-
-const projectImages = document.querySelector(".project__images");
-const projectImageLg = document.querySelector(".project__images_lg");
-
-if (projectImages && projectImageLg) {
-  if (window.innerWidth < 1100) {
-    let outProjectImages = projectImages;
-    projectImageLg.innerHTML = outProjectImages.outerHTML;
-    projectImages.remove();
-  }
-}
-
-const projectImage = projectBody?.querySelectorAll(".project__image img");
-let imgSrc;
-
-function openModalImage(e) {
-  console.log(e);
-  imgSrc = e.target.src;
-
-  imageModal(imgSrc);
-}
-
-for (let i = 0; i < projectImage?.length; i++) {
-  let currentImage = projectImage[i];
-
-  currentImage.addEventListener("click", openModalImage);
-  // currentImage.addEventListener("touchstart", openModalImage);
-}
-
-document.body.onclick = function (e) {
-  if (e.target === e.target.closest(".modal")) {
-    document.querySelector(".modal").remove();
-  }
-};
+// footer
 
 const footerColumns = document.querySelectorAll(".footer__column");
 

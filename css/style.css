@@ -291,6 +291,9 @@ body {
     padding: 60px 30px;
     background: #FCFCFC;
     border-radius: 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .project__title {
@@ -315,6 +318,7 @@ body {
     color: #252525;
     margin-bottom: 30px;
     max-width: 412px;
+    flex: 1 1 auto;
 }
 
 .project__links {
@@ -344,6 +348,7 @@ body {
 
 .project__link--orange {
     padding: 7px 32px;
+    font-weight: 400;
 }
 
 .project__link-orange--transparent {
@@ -379,6 +384,7 @@ body {
 }
 
 .document__col {
+    width: 100%;
     max-width: 270px;
     cursor: pointer;
 }
@@ -581,64 +587,15 @@ body {
 
 .sub-footer {
     padding: 15px 0px 19px 0px;
-    background-color: #0b0d17;
+    background-color: #ffff;
 }
 
 .sub-footer__container {
     max-width: 1045px;
 }
 
-._container {}
-
 .sub-footer__text {
     font-size: 12px;
     line-height: calc(15 / 12 * 100%);
-    color: #ffffff;
-    opacity: 0.5;
-    text-align: center;
-}
-
-/* DYNAMIC STYLES ----------------------------------------------------------------> */
-
-.modal {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.733);
-    animation: zoom 100ms ease-in-out;
-}
-
-@keyframes zoom {
-    from {
-        transform: scale(0);
-    }
-
-    to {
-        transform: scale(1);
-    }
-}
-
-.modal img {
-    width: 50%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.closeBtn {
-    color: rgba(255, 255, 255, 0.87);
-    font-size: 25px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 20px;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-}
-
-.closeBtn:hover {
-    color: rgb(255, 255, 255);
+    color: #B1B1B1;
 }

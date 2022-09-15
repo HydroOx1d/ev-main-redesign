@@ -21,27 +21,11 @@ export function changeLanguage(type) {
 
   const gotoDocumentsSection = document?.querySelector(".goto-document");
   const gotoDocumentTitle = gotoDocumentsSection?.querySelector(
-    ".goto-document__title"
-  );
-  const gotoDocumentButton = gotoDocumentsSection?.querySelector(
-    ".goto-document__btn"
+    ".document__title"
   );
 
   if (gotoDocumentTitle)
     gotoDocumentTitle.innerText = currentLanguage?.main.documents.title;
-  if (gotoDocumentButton)
-    gotoDocumentButton.innerText = currentLanguage?.main.documents.button;
-
-  // PROJECT LINKS
-
-  const projectSection = document?.querySelector(".page__project");
-  const projectLinksText = projectSection?.querySelectorAll(
-    ".item-nav-project__text"
-  );
-
-  projectLinksText?.forEach((link, i) => {
-    link.innerText = currentLanguage?.main.projects[i];
-  });
 
   // DOCUMENTS PAGE
 
@@ -50,4 +34,20 @@ export function changeLanguage(type) {
 
   if (documentsPageTitle)
     documentsPageTitle.innerText = currentLanguage?.documentsPage.title;
+
+  // FOOTER
+
+  const footerNavTitles = document.querySelectorAll('.column-footer-nav__title');
+  const footerNavLinks = document.querySelectorAll('.column-footer-nav__link');
+  const subFooterAlert = document.querySelector('.sub-footer__text');
+
+  footerNavTitles.forEach((title, index) => {
+    title.innerText = currentLanguage?.footer.navTitle[index];
+  })
+
+  footerNavLinks.forEach((link, index) => {
+    link.innerText = currentLanguage?.footer.navLink[index];
+  })
+
+  subFooterAlert.innerText = currentLanguage?.footer.warning;
 }

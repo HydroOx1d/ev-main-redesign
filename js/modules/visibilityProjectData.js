@@ -1,51 +1,37 @@
 import { projectData } from "./projectData.js";
 
-const projectBody = document?.querySelector(".project__body");
+const projectContent = document?.querySelector(".project__content");
 
-export function visibilityProjectData(projectName, languageType) {
-  if (!projectBody) return;
-  let currentProject = projectData[projectName];
+export function visibilityProjectData(languageType) {
+  if (!projectContent) return;
 
-  const title = projectBody.querySelector(".project__title");
-  const desc = projectBody.querySelector(".project__description");
-  const illustration = projectBody.querySelector(".project__illustration img");
-  const screenshots = projectBody.querySelectorAll(".project__image img");
-  const links = projectBody.querySelector(".project__btns");
-  const linkToWebsite = projectBody.querySelector(".project__btn_website");
-  const linkToApp = projectBody.querySelector("#projectApp");
-
-  title.innerText = currentProject?.title[languageType];
-
-  let modifiedDesc = currentProject?.description[languageType]?.split("");
-
-  for (let i = 0; i < modifiedDesc?.length; i++) {
-    if (modifiedDesc[i] == "\n") {
-      modifiedDesc[i] = "<br><br>";
-    }
+  if(projectContent.children.length > 0) {
+    projectContent.innerHTML = "";
   }
 
-  desc.innerHTML = modifiedDesc?.join("");
+  projectData.forEach((data, index) => {
+    let projectMarkup = `<div class="project__column">
+              <div class="project__item">
+                <h2 class="${`project__title ${index % 2 !== 0 ? "project__title--orange" : " "}`}">${data.title[languageType]}</h2>
+                <p class="project__desc">${data.description[languageType]}</p>
+                <div class="project__links">
+                  ${data.links.toWebSite !== "" ? `<a href="${data.links.toWebSite}" target="_blank" class="${"btn " + (index % 2 !== 0 ? "btn_orange project__link--orange" : "project__link")}">Web-Site</a>` : ""}
+                  ${data.links.toApplication !== "" ? `<a href="${data.links.toApplication}" target="_blank"
+                    class="btn project__link project__link-app project__link--transparent">App
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.83333 3.33335L14.5 8.00002L9.83333 12.6667" stroke="#4478BB" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M14.5 8L2.5 8" stroke="#4478BB" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>` : ""}
+                </div>
+              </div>
+            </div>`;
 
-  // links
+    projectContent.insertAdjacentHTML('beforeend', projectMarkup);
+  })
 
-  linkToWebsite.href = currentProject?.links.toWebSite;
 
-  if (currentProject?.links.toApplication === "") {
-    linkToApp?.remove();
-  } else {
-    if (!linkToApp) {
-      links.insertAdjacentHTML(
-        "beforeend",
-        `<a href="${currentProject?.links.toApplication}" id="projectApp" class="btn btn_orange project__btn project__btn_app" target="_blank"
-                      >App <img src="./img/project/arrow.svg" alt="arrow_right"
-                    /></a>`
-      );
-    }
-  }
 
-  // images
 
-  for (let i = 0; i < screenshots.length; i++) {
-    screenshots[i].src = currentProject?.projectScreenshots[i].link;
-  }
 }
