@@ -29,7 +29,7 @@ export const language = {
     },
     footer: {
       navTitle: ["Navigation", "Politic & Privacy", "Application"],
-      navLink: ["Сapitalization", "Stocks", "Documents", "Privacy policy", "AML Policy", "Personal data processing conditions"],
+      navLink: ["Сapitalization", "Stocks", "Documents", "Privacy policy", "AML Policy", "Terms & Conditions"],
       warning: "Risk warning: Trading in financial instruments is a risky activity and can bring not only profit, but also losses. The amount of possible losses is limited by the amount of the deposit. The client must decide for himself whether this type of activity is suitable for him, taking into account his financial capabilities. Please note that Markets does not provide services to citizens and residents in the following countries. Markets Ltd. has no representative offices of the company on the territory of the Kyrgyz Republic."
     }
   },
@@ -63,7 +63,7 @@ export const language = {
     },
     footer: {
       navTitle: ["Навигация", "Политика и Конфиденциальность", "Приложение"],
-      navLink: ["Капитализация", "Акции", "Документы", "Политика конфиденциальности", "Политика AML", "Условия обработки персональных данных"],
+      navLink: ["Капитализация", "Акции", "Документы", "Политика конфиденциальности", "Политика AML", "Правила и Условия"],
       warning: "Предупреждение о рисках: Торговля финансовыми инструментами является рискованной деятельностью и может принести не только прибыль, но и убытки. Размер возможных потерь ограничен суммой депозита. Клиент должен сам решить, подходит ли ему данный вид деятельности, учитывая свои финансовые возможности. Обратите внимание, что Markets не предоставляет услуги гражданам и резидентам следующих стран. На территории Кыргызской Республики представительства компании Markets Ltd. отсутствуют."
     }
   },
@@ -97,7 +97,7 @@ export const language = {
     },
     footer: {
       navTitle: ["导航", "政治与隐私", "应用"],
-      navLink: ["资本化", "股票", "文件", "隐私政策", "反洗钱政策", "个人数据处理条件"],
+      navLink: ["资本化", "股票", "文件", "隐私政策", "反洗钱政策", "条款及细则"],
       warning: "风险警告。金融工具交易是一种有风险的活动，不仅可以带来利润，也可以带来损失。可能的损失金额受到存款金额的限制。客户必须自己决定这种活动是否适合他，同时考虑到他的经济能力。请注意，Markets不向以下国家的公民和居民提供服务。Markets Ltd.在吉尔吉斯共和国境内没有公司的代表机构"
     }
   },
