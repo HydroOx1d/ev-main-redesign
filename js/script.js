@@ -21,28 +21,8 @@ window.addEventListener("load", () => {
   renderDocuments(globalLanguageState);
 });
 
-const hamburger = document.querySelector(".hamburger");
-const headerNavigation = document.querySelector(".header__nav");
 const headerLanguage = document.querySelector(".header__language");
 const languageMenu = document.querySelector(".language__menu");
-
-hamburger.addEventListener("click", () => {
-  if (!hamburger.classList.contains("is-active")) {
-    hamburger.classList.add("is-active");
-    headerNavigation.classList.add("_nav-is-active");
-    headerLanguage.style.display = "block";
-    document.body.style.overflow = "hidden";
-    document.querySelector(".header").style.backgroundColor = "#fff";
-    document.querySelector(".header").style.position = "static";
-  } else {
-    hamburger.classList.remove("is-active");
-    headerNavigation.classList.remove("_nav-is-active");
-    headerLanguage.style.display = "none";
-    document.body.style.overflow = "auto";
-    document.querySelector(".header").style.backgroundColor = "transparent";
-    document.querySelector(".header").style.position = "absolute";
-  }
-});
 
 headerLanguage.addEventListener("click", () => {
   languageMenu.classList.toggle("_menu-is-active");
@@ -91,18 +71,6 @@ function identifyLanguage(langType) {
   // Current Text
   currentLanguage.querySelector(".language__text").innerText =
     identifiedLanguage?.textContent.trim();
-}
-
-// footer
-
-const footerColumns = document.querySelectorAll(".footer__column");
-
-if (footerColumns) {
-  if (window.innerWidth < 768 && window.innerWidth > 576) {
-    let footerColumn1 = footerColumns[3].outerHTML;
-    footerColumns[3].outerHTML = footerColumns[1].outerHTML;
-    footerColumns[1].outerHTML = footerColumn1;
-  }
 }
 
 // Documents

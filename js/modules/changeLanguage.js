@@ -37,9 +37,9 @@ export function changeLanguage(type) {
 
   // FOOTER
 
-  const footerNavTitles = document.querySelectorAll('.column-footer-nav__title');
-  const footerNavLinks = document.querySelectorAll('.column-footer-nav__link');
-  const subFooterAlert = document.querySelector('.sub-footer__text');
+  const footerNavTitles = document?.querySelectorAll('.column-footer-nav__title');
+  const footerNavLinks = document?.querySelectorAll('.column-footer-nav__link');
+  const subFooterAlert = document?.querySelector('.sub-footer__text');
 
   footerNavTitles.forEach((title, index) => {
     title.innerText = currentLanguage?.footer.navTitle[index];
